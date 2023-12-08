@@ -270,7 +270,7 @@ fun MessageList(
     LazyColumn {
         items(wifiDevices) { item ->
             Text(
-                text = item.deviceName,
+                text = item.deviceName+"-"+item,
                 modifier = Modifier
                     .padding(top = 10.dp, bottom = 10.dp)
                     .clickable {
@@ -322,8 +322,6 @@ fun attemptToConnect(
                 //success logic
                 Log.e(TAG, "onSuccess: logic${device.deviceName}")
                 connectDevices.add(device)
-
-
             }
 
             override fun onFailure(reason: Int) {
