@@ -24,7 +24,7 @@
         android:theme="@style/Theme.Wifip2p"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.nuist.wifip2p.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Wifip2p">
